@@ -4,9 +4,17 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="theme-color" content="#09021c">
-  <link rel="icon" type="image/png" href="https://i.imgur.com/kEplItC.jpeg">
-  <title> RINJANI4D — UPGRADE AKUN VIP </title>
+  <meta name="description" content="RINJANI4D vip">
+
+  <link
+    rel="icon"
+    type="image/png"
+    href="https://images.linkcdn.cloud/V2/508/favicon/favicon-1606089280.png"
+  >
+
+  <title>RINJANI4D — UPGRADE AKUN VIP</title>
   <link rel="stylesheet" href="style.css">
+
   <style>
     .status-hidden{
       display:none !important;
@@ -89,316 +97,241 @@
         padding:14px 18px;
       }
     }
-   </style>
+  </style>
 </head>
- <body>
-    <div class="welcome-popup" style="display: none;">
-        <div class="welcome-box">
-            <button class="welcome-close" id="closeWelcome" type="button" aria-label="Tutup popup">×</button>
-            <a href="" aria-label="Logo GAJAH BOLA">
-                <img src="assets/welcome.png" class="welcome-image" alt="Welcome GAJAH BOLA">
-            </a>
-        </div>
+
+<body>
+
+  <!-- POPUP WELCOME -->
+  <div id="welcomePopup" class="welcome-popup">
+    <div class="welcome-box">
+      <button
+        class="welcome-close"
+        id="closeWelcome"
+        type="button"
+        aria-label="Tutup popup"
+      >
+        ✕
+      </button>
+
+      <a href="#" aria-label="Welcome RINJANI4D">
+        <img
+          src="https://i.imgur.com/kEplItC.jpeg"
+          class="welcome-image"
+          alt="Welcome RINJANI4D"
+        >
+      </a>
     </div>
+  </div>
 
-    <!-- PARTIKEL LATAR -->
-    <div id="particles" aria-hidden="true"></div>
+  <!-- PARTIKEL LATAR -->
+  <div id="particles" aria-hidden="true"></div>
 
-    <!-- HALAMAN UTAMA -->
-    <main class="app">
-        <section class="game-shell">
-            <header class="hero">
-                <img src="https://images.linkcdn.cloud/V2/598/logo/logo-1687099285.png"
-                     class="logo"
-                     alt="Logo GAJAH BOLA">
+  <!-- HALAMAN UTAMA -->
+  <main class="app">
+    <section class="game-shell">
 
-                <div class="brand-copy">
-                    <small>GATES OF OLYMPUS</small>
-                    <h1></h1>
-                    <p>UPGRADE AKUN VIP KAMU SPIN SEKARANG!</p>
-                </div>
+      <header class="topbar">
+        <img
+          src="https://i.imgur.com/kQwjQHi.png"
+          class="logo"
+          alt="Logo RINJANI4D"
+        >
 
-                <div class="demo-chip">
-                    <span>DEMO</span>
-                    <span>AKUN WDP</span>
-                </div>
-            </header>
+        <div class="brand-copy">
+          <small>GATES OF OLYMPUS</small>
+          <h1></h1>
+          <p>UPGRADE AKUN VIP KAMU SPIN SEKARANG!</p>
+        </div>
 
-            <!-- STATISTIK 2x2 DENGAN 4 GAMBAR BERBEDA -->
-            <section class="stats" aria-label="Statistik">
-                <article class="jackpot-stat">
-                    <img src="assets/total-spin.png" alt="TOTAL SPIN">
-                    <div class="jackpot-content">
-                        <strong id="spinCount">0</strong>
-                    </div>
-                </article>
+        <div class="demo-chip">
+          <span></span>
+          AKUN VVIP
+        </div>
+      </header>
 
-                <article class="jackpot-stat">
-                    <img src="assets/total-konek.png" alt="TOTAL KONEK">
-                    <div class="jackpot-content">
-                        <strong id="tumbleCount">0</strong>
-                    </div>
-                </article>
+      <!-- STATISTIK 2×2 DENGAN 4 GAMBAR BERBEDA -->
+      <section class="stats premium-stats">
 
-                <article class="jackpot-stat">
-                    <img src="assets/total-perkalian.png" alt="TOTAL PERKALIAN">
-                    <div class="jackpot-content">
-                        <strong id="multiplier">1x</strong>
-                    </div>
-                </article>
+        <article class="jackpot-stat">
+          <img
+            src="assets/total-spin.png"
+            alt="TOTAL SPIN"
+          >
+          <div class="jackpot-content">
+            <strong id="spinCount">0</strong>
+          </div>
+        </article>
 
-                <article class="jackpot-stat">
-                    <img src="assets/total-hasil.png" alt="TOTAL HASIL">
-                    <div class="jackpot-content">
-                        <strong id="demoWin">0</strong>
-                    </div>
-                </article>
-            </section>
-           <!-- MESIN SLOT -->
-<section class="machine">
-    <div class="machine-shell">
+        <article class="jackpot-stat">
+          <img
+            src="assets/total-konek.png"
+            alt="TOTAL KONEK"
+          >
+          <div class="jackpot-content">
+            <strong id="tumbleCount">0</strong>
+          </div>
+        </article>
+
+        <article class="jackpot-stat">
+          <img
+            src="assets/total-perkalian.png"
+            alt="TOTAL PERKALIAN"
+          >
+          <div class="jackpot-content">
+            <strong id="multiplierTotal">1×</strong>
+          </div>
+        </article>
+
+        <article class="jackpot-stat">
+          <img
+            src="assets/total-hasil.png"
+            alt="TOTAL HASIL"
+          >
+          <div class="jackpot-content">
+            <strong id="demoWin">0</strong>
+          </div>
+        </article>
+
+      </section>
+
+      <!-- MESIN SLOT -->
+      <section class="machine">
         <div class="machine-shine"></div>
 
-        <div id="reelGrid" class="reel-grid" aria-label="Grid slot 6 kolom 5 baris">
+        <div
+          id="reelGrid"
+          class="reel-grid"
+          aria-label="Grid slot 6 kolom 5 baris"
+        ></div>
 
-            <div class="cell" data-row="0" data-col="0">
-                <img alt="Simbol" src="assets/symbols/06_permata_hijau.png">
-            </div>
+        <div class="controls">
+          <button id="spinBtn" class="spin-btn" type="button">
+            <span class="spin-main">UPGRADE AKUN</span>
+            <small class="spin-sub">
+              Tekan untuk upgrade ke akun vvip
+            </small>
+          </button>
 
-            <div class="cell" data-row="0" data-col="1">
-                <img alt="Simbol" src="assets/symbols/10_cincin.png">
-            </div>
-
-            <div class="cell" data-row="0" data-col="2">
-                <img alt="Simbol" src="assets/symbols/10_cincin.png">
-            </div>
-
-            <div class="cell" data-row="0" data-col="3">
-                <img alt="Simbol" src="assets/symbols/07_permata_ungu.png">
-            </div>
-
-            <div class="cell" data-row="0" data-col="4">
-                <img alt="Simbol" src="assets/symbols/06_permata_hijau.png">
-            </div>
-
-            <div class="cell multiplier sticky-lock static-multiplier"
-                 data-row="0" data-col="5">
-                <img alt="Simbol" src="assets/symbols/02_5x.png">
-            </div>
-
-            <div class="cell" data-row="1" data-col="0">
-                <img alt="Simbol" src="assets/symbols/05_permata_merah.png">
-            </div>
-
-            <div class="cell" data-row="1" data-col="1">
-                <img alt="Simbol" src="assets/symbols/10_cincin.png">
-            </div>
-
-            <div class="cell" data-row="1" data-col="2">
-                <img alt="Simbol" src="assets/symbols/08_jan_pasir.png">
-            </div>
-
-            <div class="cell" data-row="1" data-col="3">
-                <img alt="Simbol" src="assets/symbols/07_permata_ungu.png">
-            </div>
-
-            <div class="cell" data-row="1" data-col="4">
-                <img alt="Simbol" src="assets/symbols/01_sehijau.png">
-            </div>
-
-            <div class="cell" data-row="1" data-col="5">
-                <img alt="Simbol" src="assets/symbols/06_permata_hijau.png">
-            </div>
-
-            <div class="cell" data-row="2" data-col="0">
-                <img alt="Simbol" src="assets/symbols/05_permata_merah.png">
-            </div>
-
-            <div class="cell" data-row="2" data-col="1">
-                <img alt="Simbol" src="assets/symbols/06_permata_hijau.png">
-            </div>
-
-            <div class="cell" data-row="2" data-col="2">
-                <img alt="Simbol" src="assets/symbols/07_permata_ungu.png">
-            </div>
-
-            <div class="cell" data-row="2" data-col="3">
-                <img alt="Simbol" src="assets/symbols/05_permata_merah.png">
-            </div>
-
-            <div class="cell" data-row="2" data-col="4">
-                <img alt="Simbol" src="assets/symbols/09_piala.png">
-            </div>
-
-            <div class="cell" data-row="2" data-col="5">
-                <img alt="Simbol" src="assets/symbols/05_permata_merah.png">
-            </div>
-
-            <div class="cell" data-row="3" data-col="0">
-                <img alt="Simbol" src="assets/symbols/08_jan_pasir.png">
-            </div>
-
-            <div class="cell" data-row="3" data-col="1">
-                <img alt="Simbol" src="assets/symbols/05_permata_merah.png">
-            </div>
-
-            <div class="cell" data-row="3" data-col="2">
-                <img alt="Simbol" src="assets/symbols/06_permata_hijau.png">
-            </div>
-
-            <div class="cell" data-row="3" data-col="3">
-                <img alt="Simbol" src="assets/symbols/01_sehijau.png">
-            </div>
-
-            <div class="cell" data-row="3" data-col="4">
-                <img alt="Simbol" src="assets/symbols/08_jan_pasir.png">
-            </div>
-
-            <div class="cell" data-row="3" data-col="5">
-                <img alt="Simbol" src="assets/symbols/07_permata_ungu.png">
-            </div>
-
-            <div class="cell" data-row="4" data-col="0">
-                <img alt="Simbol" src="assets/symbols/07_permata_ungu.png">
-            </div>
-
-            <div class="cell" data-row="4" data-col="1">
-                <img alt="Simbol" src="assets/symbols/01_sehijau.png">
-            </div>
-
-            <div class="cell" data-row="4" data-col="2">
-                <img alt="Simbol" src="assets/symbols/04_mahkota.png">
-            </div>
-
-            <div class="cell" data-row="4" data-col="3">
-                <img alt="Simbol" src="assets/symbols/10_cincin.png">
-            </div>
-
-            <div class="cell" data-row="4" data-col="4">
-                <img alt="Simbol" src="assets/symbols/07_permata_ungu.png">
-            </div>
-
-            <div class="cell" data-row="4" data-col="5">
-                <img alt="Simbol" src="assets/symbols/08_jan_pasir.png">
-            </div>
-
+          <a
+            href="https://rinjanichampion.com/"
+            class="register-small"
+          >
+            <span>LOGIN</span>
+            <small>SEKARANG</small>
+          </a>
         </div>
-    </div>
-     <div class="controls">
-    <button id="spinBtn" class="spin-btn" type="button">
-        <span class="spin-main">UPGRADE AKUN</span>
-        <small class="spin-sub">Tekan untuk upgrade ke akun wvip</small>
-    </button>
 
-    <a href="https://gajahmainbola.com/" class="register-small">
-        <span>LOGIN</span>
-        <small>SEKARANG</small>
-    </a>
-</div>
+        <!-- Tetap diperlukan JavaScript, tetapi disembunyikan -->
+        <p
+          id="status"
+          class="status-hidden"
+          aria-live="polite"
+        ></p>
 
-<!-- Tetap diperlukan JavaScript, tetapi disembunyikan -->
-<p id="status" class="status-hidden" aria-live="polite"></p>
+        <a
+          id="livechatBtn"
+          class="livechat-btn"
+          href="https://static.zdassets.com/web_widget/latest/liveChat.html?v=10#key=dunia4dcom2.zendesk.com&settings=JTdCJTIyd2ViV2lkZ2V0JTIyJTNBJTdCJTIyY2hhdCUyMiUzQSU3QiUyMnRpdGxlJTIyJTNBbnVsbCUyQyUyMm1lbnVPcHRpb25zJTIyJTNBJTdCJTIyZW1haWxUcmFuc2NyaXB0JTIyJTNBdHJ1ZSU3RCUyQyUyMmRlcGFydG1lbnRzJTIyJTNBJTdCJTdEJTJDJTIycHJlY2hhdEZvcm0lMjIlM0ElN0IlMjJkZXBhcnRtZW50TGFiZWwlMjIlM0FudWxsJTJDJTIyZ3JlZXRpbmclMjIlM0FudWxsJTdEJTJDJTIyb2ZmbGluZUZvcm0lMjIlM0ElN0IlMjJncmVldGluZyUyMiUzQW51bGwlN0QlMkMlMjJjb25jaWVyZ2UlMjIlM0ElN0IlMjJhdmF0YXJQYXRoJTIyJTNBbnVsbCUyQyUyMm5hbWUlMjIlM0FudWxsJTJDJTIydGl0bGUlMjIlM0FudWxsJTdEJTdEJTJDJTIyY29sb3IlMjIlM0ElN0IlMjJhcnRpY2xlTGlua3MlMjIlM0ElMjIlMjIlMkMlMjJidXR0b24lMjIlM0ElMjIlMjIlMkMlMjJoZWFkZXIlMjIlM0ElMjIlMjIlMkMlMjJsYXVuY2hlciUyMiUzQSUyMiUyMiUyQyUyMmxhdW5jaGVyVGV4dCUyMiUzQSUyMiUyMiUyQyUyMnJlc3VsdExpc3RzJTIyJTNBJTIyJTIyJTJDJTIydGhlbWUlMjIlM0FudWxsJTdEJTdEJTdE&&locale=en-gb&title=Web%20Widget%20Live%20Chat"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <span>LIVE CHAT</span>
+        </a>
+      </section>
 
-<a id="liveChatBtn"
-   class="livechat-btn"
-   href="https://static.zdassets.com/web/widget/latest/liveChat.html?v=10#key=__WlMJiIlM0FudWxsJTDEJTDEJTDE&&locale=en-gb&title=Web%20Widget%20Live%20Chat"
-   target="_blank"
-   rel="noopener noreferrer">
-    <span>LIVE CHAT</span>
-</a>
+      <footer class="footer">
+        <span>@ RINJANI4D 2026</span>
+        <span>SEO - ATARAXIA</span>
+        <span>AKUN VVIP</span>
+      </footer>
 
-</section>
+    </section>
+  </main>
 
-<footer class="footer">
-    <span>© GAJAHBOLA 2026</span>
-    <span>SEO - ATARAXIA</span>
-    <span>AKUN WIP</span>
-</footer>
-
-</section>
-</main>
-
-<!-- POPUP HASIL -->
-<div id="resultModal"
-     class="modal"
-     role="dialog"
-     aria-modal="true"
-     aria-labelledby="modalTitle">
-
+  <!-- POPUP HASIL -->
+  <div
+    id="resultModal"
+    class="modal"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="modalTitle"
+  >
     <div class="modal-card">
-        <button id="modalClose"
-                class="modal-close"
-                type="button"
-                aria-label="Tutup hasil">
-            ×
-        </button>
+      <button
+        id="modalClose"
+        class="modal-close"
+        type="button"
+        aria-label="Tutup hasil"
+      >
+        ×
+      </button>
 
-        <div class="modal-copy">
-            <h2 id="modalTitle">SELAMAT!</h2>
+      <div class="modal-copy">
+        <h2 id="modalTitle">SELAMAT!</h2>
 
-            <p id="modalText">
-                " AKUN KAMU SUDAH UPGRADE"
-                <br>
-                " LOGIN MELALUI LINK DIBAWAH ↓ "
-            </p>
-
-            <a href="https://gajahmainbola.com/" class="register">
-                LOGIN SEKARANG → 
-            </a>
-        </div>
-    </div>
-</div>
-
-<!-- POPUP INPUT USER ID -->
-<div id="userModal"
-     class="modal"
-     role="dialog"
-     aria-modal="true">
-
-    <div class="modal-card user-card">
-        <h2>UPGRADE AKUN WIP</h2>
-
-        <p>Masukkan USER ID</p>
-
-        <input type="text"
-               id="userid"
-               placeholder="Masukkan USER ID"
-               autocomplete="off">
-
-        <button id="cekBtn"
-                class="cek-premium"
-                type="button">
-            ✨ CEK AKUN ✨
-        </button>
-    </div>
-</div>
-
-<!-- POPUP LOADING -->
-<div id="loadingModal"
-     class="loading-modal"
-     role="dialog"
-     aria-modal="true">
-
-    <div class="loading-card">
-        <div class="loader"></div>
-
-        <h2>MEMERIKSA AKUN...</h2>
-
-        <p id="loadingText">
-            Mengecek USER ID...
+        <p id="modalText">
+          AKUN KAMU SUDAH UPGRADE<br>
+          LOGIN MELALUI LINK DIBAWAH ↓
         </p>
+
+        <a
+          href="https://gajahmainbola.com/"
+          class="register"
+        >
+          LOGIN SEKARANG →
+        </a>
+      </div>
     </div>
-</div>
+  </div>
 
-<script src="script.js"></script>
+  <!-- POPUP INPUT USER ID -->
+  <div
+    id="userModal"
+    class="modal"
+    role="dialog"
+    aria-modal="true"
+  >
+    <div class="modal-card user-card">
+      <h2>UPGRADE AKUN VVIP</h2>
 
+      <p>Masukkan USER ID</p>
+
+      <input
+        type="text"
+        id="userid"
+        placeholder="Masukkan USER ID"
+        autocomplete="off"
+      >
+
+      <button
+        id="cekBtn"
+        class="cek-premium"
+        type="button"
+      >
+        ✨ CEK AKUN ✨
+      </button>
+    </div>
+  </div>
+
+  <!-- POPUP LOADING -->
+  <div
+    id="loadingModal"
+    class="loading-modal"
+    role="dialog"
+    aria-modal="true"
+  >
+    <div class="loading-card">
+      <div class="loader"></div>
+
+      <h2>MEMERIKSA AKUN...</h2>
+
+      <p id="loadingText">
+        Mengecek USER ID...
+      </p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
 </body>
-</html>    
- 
-
-
-
-
-
-
-  
+</html>
